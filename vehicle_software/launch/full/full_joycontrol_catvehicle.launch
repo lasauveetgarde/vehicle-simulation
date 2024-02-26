@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <include file="$(find vehicle_simulation)/vehicle_software/launch/drivers/catvehicle_spawn.launch">
+    	<arg name="Z" value="5"/>
+    </include>
+
+    <include file="$(find vehicle_simulation)/vehicle_software/launch/drivers/start_joy_teleop.launch">
+    	<arg name="velmax" value="15"/>
+    </include>
+
+</launch>
