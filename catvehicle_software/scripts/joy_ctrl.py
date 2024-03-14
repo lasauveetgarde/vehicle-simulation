@@ -44,8 +44,8 @@ class Controller():
         self.debug_enabled = rospy.get_param("~debug", False)
         if self.debug_enabled:
             rospy.loginfo("Debug enabled")
-        forward_speed_limit_mps = rospy.get_param("~speed/frwd_limit", 3)
-        backward_speed_limit_mps = rospy.get_param("~speed/bkwrd_limit", -2)
+        forward_speed_limit_mps = rospy.get_param("~speed/frwd_limit", 10)
+        backward_speed_limit_mps = rospy.get_param("~speed/bkwrd_limit", -10)
         steer_limit_deg = rospy.get_param("~steer/limit", 25)
         steer_limit_rad = np.deg2rad(steer_limit_deg)
 

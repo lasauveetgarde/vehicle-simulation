@@ -87,7 +87,7 @@ lidar_obstacle_layer_close:
         observation_sources:      rgbd1_mark rgbd1_clear
         rgbd1_mark:
           data_type: PointCloud2
-          topic: /lslidar_point_cloud/filtered
+          topic: /catvehicle/velodyne_points
           marking: true
           clearing: false
           obstacle_range: 15.0          # meters
@@ -102,7 +102,7 @@ lidar_obstacle_layer_close:
         rgbd1_clear:
           enabled: true                #default true, can be toggled on/off with associated service call
           data_type: PointCloud2
-          topic: /lslidar_point_cloud/filtered
+          topic: /catvehicle/velodyne_points
           marking: false
           clearing: true
           max_z: 8.0                  # default 0, meters
@@ -131,7 +131,7 @@ lidar_obstacle_layer_far:
         observation_sources:      rgbd1_mark rgbd1_clear
         rgbd1_mark:
           data_type: PointCloud2
-          topic: /lslidar_point_cloud/filtered
+          topic: /catvehicle/velodyne_points
           marking: true
           clearing: false
           obstacle_range: 30.0          # meters
@@ -146,7 +146,7 @@ lidar_obstacle_layer_far:
         rgbd1_clear:
           enabled: true                #default true, can be toggled on/off with associated service call
           data_type: PointCloud2
-          topic: /lslidar_point_cloud/filtered
+          topic: /catvehicle/velodyne_points
           marking: false
           clearing: true
           max_z: 8.0                  # default 0, meters
